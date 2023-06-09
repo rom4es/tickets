@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { observer } from 'mobx-react';
+
+import HallScheme from './components/hallScheme';
+import hallSchemeStore from './stores/HallSchemeStore';
+
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    hallSchemeStore.fetchPlaces();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <HallScheme />
     </div>
   );
 }
 
-export default App;
+export default observer(App);
