@@ -1,0 +1,14 @@
+.app {
+  text-align: center;
+
+  .workspace {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}

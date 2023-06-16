@@ -1,0 +1,19 @@
+.legend {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 6px;
+  max-width: 600px;
+  flex-wrap: wrap;
+
+  .item {
+    display: inline-flex;
+
+    .color {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}

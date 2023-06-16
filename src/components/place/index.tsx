@@ -1,35 +1,43 @@
 import React from 'react';
-import styles from './place.module.css';
+import styles from './styles.module.scss';
 import { IPlace } from '../../shared/interfaces';
 import clsx from 'clsx';
-import { COLOR_BOOKED } from '../../shared/constants';
+import hallSchemeStore from '../../stores/HallSchemeStore';
+import { observer } from 'mobx-react';
+import { Tooltip } from '@mui/material';
+import { getColor } from '../../shared/helpers';
 
 interface IProps {
   place: IPlace;
 }
 
-
-const getColor = (place: IPlace) => {
-  if (place.booked) return COLOR_BOOKED;
-  if (place.price < 1000) {
-    return 'red';
-  }
-  if (place.price < 2000) {
-    return 'green';
-  }
-  if (place.price < 3000) {
-    return 'blue';
-  }
-  return 'aqua';
-};
-
 const Place = ({ place }: IProps) => {
   return (
-    <div
-      className={clsx(styles.place, place.booked && styles.booked)}
-      style={{ backgroundColor: getColor(place) }}
-    ></div>
+    <Tooltip
+      title={
+        <div className={styles.tooltip}>
+          <div>{place.price} руб.</div>
+          <div>
+            {place.row} ряд {place.place} место
+          </div>
+        </div>
+      }
+      arrow
+      placement="top"
+      disableHoverListener={place.booked}
+      disableInteractive
+    >
+      <div
+        className={clsx(
+          styles.place,
+          place.booked && styles.booked,
+          place.selected && styles.selected
+        )}
+        style={{ backgroundColor: getColor(place, hallSchemeStore.colors) }}
+        onClick={() => hallSchemeStore.choosePlace(place.row, place.place)}
+      ></div>
+    </Tooltip>
   );
 };
 
-export default Place;
+export default observer(Place);

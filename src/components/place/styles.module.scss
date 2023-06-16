@@ -1,0 +1,23 @@
+.tooltip {
+  text-align: center;
+}
+
+.place {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &:not(.booked):not(.selected):hover {
+    box-shadow: 0px 0px 0px 3px rgba(244, 67, 54, 0.5);
+  }
+
+  &.selected {
+    box-shadow: 0px 0px 0px 3px rgba(244, 67, 54, 1);
+    background-color: #fff !important;
+  }
+
+  &.booked {
+    cursor: default;
+  }
+}
