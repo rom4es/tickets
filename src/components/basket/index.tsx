@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import { observer } from 'mobx-react';
-import hallSchemeStore from '../../stores/HallSchemeStore';
+import mainStore from '../../stores/MainStore';
 import { Button } from '@mui/material';
 import { getColor } from '../../shared/helpers';
 import closeIcon from '../../assets/images/close.svg';
@@ -10,24 +10,24 @@ const Basket = () => {
   return (
     <div className={styles.basket}>
       <h3>Выбранные места</h3>
-      {hallSchemeStore.selectedPlaces.length ? (
+      {mainStore.selectedSeats.length ? (
         <>
           <ul className={styles.list}>
-            {hallSchemeStore.selectedPlaces.map((place) => (
+            {mainStore.selectedSeats.map((seat) => (
               <li
-                key={`${place.row}-${place.place}`}
+                key={`${seat.row}-${seat.seat}`}
                 className={styles.item}
-                style={{ borderColor: getColor(place, hallSchemeStore.colors) }}
+                style={{ borderColor: getColor(seat, mainStore.colors) }}
               >
                 <div>
-                  <b>{place.price} руб.</b>
+                  <b>{seat.price} руб.</b>
                 </div>
-                <div className={styles.place}>
-                  {place.row} ряд {place.place} место
+                <div className={styles.seat}>
+                  {seat.row} ряд {seat.seat} место
                 </div>
                 <div
                   className={styles.remove}
-                  onClick={() => hallSchemeStore.removePlace(place.row, place.place)}
+                  onClick={() => mainStore.removeSeat(seat.row, seat.seat)}
                 >
                   <img src={closeIcon} alt="remove" />
                 </div>
@@ -35,7 +35,7 @@ const Basket = () => {
             ))}
           </ul>
           <div className={styles.total}>
-            Итого к оплате: <b>{hallSchemeStore.totalPrice} руб.</b>
+            Итого к оплате: <b>{mainStore.totalPrice} руб.</b>
           </div>
           <Button variant="contained">Оплатить</Button>
         </>

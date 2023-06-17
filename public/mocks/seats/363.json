@@ -2,61 +2,61 @@
   [
     {
       "row": 1,
-      "place": 1,
+      "seat": 1,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 2,
+      "seat": 2,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 3,
+      "seat": 3,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 4,
+      "seat": 4,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 5,
+      "seat": 5,
       "price": 1000,
       "booked": true
     },
     {
       "row": 1,
-      "place": 6,
+      "seat": 6,
       "price": 1000,
       "booked": true
     },
     {
       "row": 1,
-      "place": 7,
+      "seat": 7,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 8,
+      "seat": 8,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 9,
+      "seat": 9,
       "price": 1000,
       "booked": false
     },
     {
       "row": 1,
-      "place": 10,
+      "seat": 10,
       "price": 1000,
       "booked": false
     }
@@ -64,61 +64,61 @@
   [
     {
       "row": 2,
-      "place": 1,
+      "seat": 1,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 2,
+      "seat": 2,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 3,
+      "seat": 3,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 4,
+      "seat": 4,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 5,
+      "seat": 5,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 6,
+      "seat": 6,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 7,
+      "seat": 7,
       "price": 1000,
       "booked": true
     },
     {
       "row": 2,
-      "place": 8,
+      "seat": 8,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 9,
+      "seat": 9,
       "price": 1000,
       "booked": false
     },
     {
       "row": 2,
-      "place": 10,
+      "seat": 10,
       "price": 1000,
       "booked": false
     }
@@ -126,61 +126,61 @@
   [
     {
       "row": 3,
-      "place": 1,
+      "seat": 1,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 2,
+      "seat": 2,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 3,
+      "seat": 3,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 4,
+      "seat": 4,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 5,
+      "seat": 5,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 6,
+      "seat": 6,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 7,
+      "seat": 7,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 8,
+      "seat": 8,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 9,
+      "seat": 9,
       "price": 1000,
       "booked": false
     },
     {
       "row": 3,
-      "place": 10,
+      "seat": 10,
       "price": 1000,
       "booked": false
     }
@@ -188,61 +188,61 @@
   [
     {
       "row": 4,
-      "place": 1,
+      "seat": 1,
       "price": 1000,
       "booked": false
     },
     {
       "row": 4,
-      "place": 2,
+      "seat": 2,
       "price": 1000,
       "booked": false
     },
     {
       "row": 4,
-      "place": 3,
+      "seat": 3,
       "price": 1000,
       "booked": true
     },
     {
       "row": 4,
-      "place": 4,
+      "seat": 4,
       "price": 1000,
       "booked": false
     },
     {
       "row": 4,
-      "place": 5,
+      "seat": 5,
       "price": 1000,
       "booked": true
     },
     {
       "row": 4,
-      "place": 6,
+      "seat": 6,
       "price": 1000,
       "booked": false
     },
     {
       "row": 4,
-      "place": 7,
+      "seat": 7,
       "price": 1000,
       "booked": true
     },
     {
       "row": 4,
-      "place": 8,
+      "seat": 8,
       "price": 1000,
       "booked": false
     },
     {
       "row": 4,
-      "place": 9,
+      "seat": 9,
       "price": 1000,
       "booked": false
     },
     {
       "row": 4,
-      "place": 10,
+      "seat": 10,
       "price": 1000,
       "booked": false
     }
@@ -250,61 +250,61 @@
   [
     {
       "row": 5,
-      "place": 1,
+      "seat": 1,
       "price": 700,
       "booked": false
     },
     {
       "row": 5,
-      "place": 2,
+      "seat": 2,
       "price": 700,
       "booked": false
     },
     {
       "row": 5,
-      "place": 3,
+      "seat": 3,
       "price": 700,
       "booked": false
     },
     {
       "row": 5,
-      "place": 4,
+      "seat": 4,
       "price": 700,
       "booked": true
     },
     {
       "row": 5,
-      "place": 5,
+      "seat": 5,
       "price": 700,
       "booked": true
     },
     {
       "row": 5,
-      "place": 6,
+      "seat": 6,
       "price": 700,
       "booked": true
     },
     {
       "row": 5,
-      "place": 7,
+      "seat": 7,
       "price": 700,
       "booked": true
     },
     {
       "row": 5,
-      "place": 8,
+      "seat": 8,
       "price": 700,
       "booked": true
     },
     {
       "row": 5,
-      "place": 9,
+      "seat": 9,
       "price": 700,
       "booked": true
     },
     {
       "row": 5,
-      "place": 10,
+      "seat": 10,
       "price": 700,
       "booked": false
     }
@@ -312,61 +312,61 @@
   [
     {
       "row": 6,
-      "place": 1,
+      "seat": 1,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 2,
+      "seat": 2,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 3,
+      "seat": 3,
       "price": 700,
       "booked": true
     },
     {
       "row": 6,
-      "place": 4,
+      "seat": 4,
       "price": 700,
       "booked": true
     },
     {
       "row": 6,
-      "place": 5,
+      "seat": 5,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 6,
+      "seat": 6,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 7,
+      "seat": 7,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 8,
+      "seat": 8,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 9,
+      "seat": 9,
       "price": 700,
       "booked": false
     },
     {
       "row": 6,
-      "place": 10,
+      "seat": 10,
       "price": 700,
       "booked": false
     }
@@ -374,61 +374,61 @@
   [
     {
       "row": 7,
-      "place": 1,
+      "seat": 1,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 2,
+      "seat": 2,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 3,
+      "seat": 3,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 4,
+      "seat": 4,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 5,
+      "seat": 5,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 6,
+      "seat": 6,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 7,
+      "seat": 7,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 8,
+      "seat": 8,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 9,
+      "seat": 9,
       "price": 700,
       "booked": false
     },
     {
       "row": 7,
-      "place": 10,
+      "seat": 10,
       "price": 700,
       "booked": false
     }
@@ -436,61 +436,61 @@
   [
     {
       "row": 8,
-      "place": 1,
+      "seat": 1,
       "price": 500,
       "booked": true
     },
     {
       "row": 8,
-      "place": 2,
+      "seat": 2,
       "price": 500,
       "booked": false
     },
     {
       "row": 8,
-      "place": 3,
+      "seat": 3,
       "price": 500,
       "booked": false
     },
     {
       "row": 8,
-      "place": 4,
+      "seat": 4,
       "price": 500,
       "booked": true
     },
     {
       "row": 8,
-      "place": 5,
+      "seat": 5,
       "price": 500,
       "booked": true
     },
     {
       "row": 8,
-      "place": 6,
+      "seat": 6,
       "price": 500,
       "booked": true
     },
     {
       "row": 8,
-      "place": 7,
+      "seat": 7,
       "price": 500,
       "booked": false
     },
     {
       "row": 8,
-      "place": 8,
+      "seat": 8,
       "price": 500,
       "booked": false
     },
     {
       "row": 8,
-      "place": 9,
+      "seat": 9,
       "price": 500,
       "booked": false
     },
     {
       "row": 8,
-      "place": 10,
+      "seat": 10,
       "price": 500,
       "booked": false
     }
@@ -498,61 +498,61 @@
   [
     {
       "row": 9,
-      "place": 1,
+      "seat": 1,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 2,
+      "seat": 2,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 3,
+      "seat": 3,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 4,
+      "seat": 4,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 5,
+      "seat": 5,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 6,
+      "seat": 6,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 7,
+      "seat": 7,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 8,
+      "seat": 8,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 9,
+      "seat": 9,
       "price": 500,
       "booked": false
     },
     {
       "row": 9,
-      "place": 10,
+      "seat": 10,
       "price": 500,
       "booked": false
     }
@@ -560,61 +560,61 @@
   [
     {
       "row": 10,
-      "place": 1,
+      "seat": 1,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 2,
+      "seat": 2,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 3,
+      "seat": 3,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 4,
+      "seat": 4,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 5,
+      "seat": 5,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 6,
+      "seat": 6,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 7,
+      "seat": 7,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 8,
+      "seat": 8,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 9,
+      "seat": 9,
       "price": 500,
       "booked": false
     },
     {
       "row": 10,
-      "place": 10,
+      "seat": 10,
       "price": 500,
       "booked": false
     }

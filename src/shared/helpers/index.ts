@@ -1,6 +1,6 @@
 import { COLOR_BOOKED } from "../constants";
-import { Colors, IPlace } from "../interfaces";
+import { Colors, ISeat } from "../interfaces";
 
-export const getColor = (place: IPlace, colors: Colors) => {
-  return place.booked ? COLOR_BOOKED : colors.get(place.price);
+export const getColor = (seat: ISeat, colors: Colors) => {
+  return seat.booked ? COLOR_BOOKED : colors.get(seat.price);
 }

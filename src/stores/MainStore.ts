@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { IEvent, IEventDto, IPlace, IPlaceDto } from '../shared/interfaces';
+import { IEvent, IEventDto, ISeat, ISeatDto } from '../shared/interfaces';
 import { COLORS } from '../shared/constants';
 
 class HallSchemeStore {
@@ -9,7 +9,7 @@ class HallSchemeStore {
 
   public loading = false;
   public events: IEvent[] = [];
-  public places: IPlace[][] = [];
+  public seats: ISeat[][] = [];
   public colors: Map<number, string> = new Map();
 
   public async fetchEvents() {
@@ -24,15 +24,15 @@ class HallSchemeStore {
     }
   }
 
-  public async fetchPlaces() {
+  public async fetchSeats() {
     try {
       this.loading = true;
 
       if (this.activeEventId) {
         const response = await fetch(`./mocks/seats/${this.activeEventId}.json`);
         await new Promise((resolve) => setTimeout(resolve, 1000)); // fake API request delay
-        await response.json().then((places) => {
-          this.setPlaces(places);
+        await response.json().then((seats) => {
+          this.setSeats(seats);
         });
       }
     } catch (e) {
@@ -43,6 +43,8 @@ class HallSchemeStore {
   }
 
   public async selectEvent(id: number) {
+    if (this.loading) return;
+
     const activeEvent = this.events.find((event) => event.selected);
     const targetEvent = this.events.find((event) => event.id === id);
     if (activeEvent === targetEvent) return;
@@ -53,7 +55,7 @@ class HallSchemeStore {
 
     if (targetEvent) {
       targetEvent.selected = true;
-      await this.fetchPlaces();
+      await this.fetchSeats();
     }
   }
 
@@ -74,10 +76,10 @@ class HallSchemeStore {
     }
   }
 
-  public setPlaces(places: IPlaceDto[][]) {
-    this.places = places.map((row) =>
-      row.map((place) => ({
-        ...place,
+  public setSeats(seats: ISeatDto[][]) {
+    this.seats = seats.map((row) =>
+      row.map((seat) => ({
+        ...seat,
         selected: false,
       }))
     );
@@ -85,40 +87,36 @@ class HallSchemeStore {
     const colors = [...COLORS];
     this.colors.clear();
 
-    places.forEach((row) => {
-      row.forEach((place) => {
-        if (!this.colors.has(place.price)) {
-          if (colors.length) {
-            // TODO:
-            this.colors.set(place.price, colors.shift() as string);
-          }
+    seats.forEach((row) => {
+      row.forEach((seat) => {
+        if (!this.colors.has(seat.price)) {
+          this.colors.set(seat.price, colors.length ? (colors.shift() as string) : COLORS[0]);
         }
       });
     });
   }
 
-  public choosePlace(row: number, place: number) {
+  public chooseSeat(row: number, seat: number) {
     const rowIndex = row - 1;
-    const placeIndex = place - 1;
-    if (this.places[rowIndex][placeIndex] && !this.places[rowIndex][placeIndex].booked) {
-      this.places[rowIndex][placeIndex].selected = !this.places[rowIndex][placeIndex].selected;
+    const seatIndex = seat - 1;
+    if (this.seats[rowIndex][seatIndex] && !this.seats[rowIndex][seatIndex].booked) {
+      this.seats[rowIndex][seatIndex].selected = !this.seats[rowIndex][seatIndex].selected;
     }
   }
 
-  // TODO:
-  public removePlace(row: number, place: number) {
+  public removeSeat(row: number, seat: number) {
     const rowIndex = row - 1;
-    const placeIndex = place - 1;
-    if (this.places[rowIndex][placeIndex] && !this.places[rowIndex][placeIndex].booked) {
-      this.places[rowIndex][placeIndex].selected = false;
+    const seatIndex = seat - 1;
+    if (this.seats[rowIndex][seatIndex] && !this.seats[rowIndex][seatIndex].booked) {
+      this.seats[rowIndex][seatIndex].selected = false;
     }
   }
 
-  public get selectedPlaces() {
-    const list: IPlace[] = [];
+  public get selectedSeats() {
+    const list: ISeat[] = [];
 
-    this.places.forEach((row) => {
-      list.push(...row.filter((place) => place.selected));
+    this.seats.forEach((row) => {
+      list.push(...row.filter((seat) => seat.selected));
     });
 
     return list;
@@ -127,8 +125,8 @@ class HallSchemeStore {
   public get totalPrice() {
     let price = 0;
 
-    this.places.forEach((row) => {
-      price += row.filter((place) => place.selected).reduce((sum, place) => sum + place.price, 0);
+    this.seats.forEach((row) => {
+      price += row.filter((seat) => seat.selected).reduce((sum, seat) => sum + seat.price, 0);
     });
 
     return price;
@@ -137,7 +135,7 @@ class HallSchemeStore {
   public deInit() {
     this.loading = false;
     this.events = [];
-    this.places = [];
+    this.seats = [];
     this.colors.clear();
   }
 }

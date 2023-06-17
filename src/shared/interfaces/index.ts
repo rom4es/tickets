@@ -1,11 +1,11 @@
-export interface IPlaceDto {
+export interface ISeatDto {
   row: number;
-  place: number;
+  seat: number;
   price: number;
   booked: boolean;
 }
 
-export interface IPlace extends IPlaceDto {
+export interface ISeat extends ISeatDto {
   selected: boolean;
 }
 
