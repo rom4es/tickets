@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tickets/static/css/main.f5838d4d.css",
+    "main.js": "/tickets/static/js/main.555eff8c.js",
+    "static/js/787.98ebff90.chunk.js": "/tickets/static/js/787.98ebff90.chunk.js",
+    "static/media/Roboto-Medium.woff": "/tickets/static/media/Roboto-Medium.162787ef9546b1c7276a.woff",
+    "static/media/Roboto-Bold.woff": "/tickets/static/media/Roboto-Bold.ebd806deceb1439cc059.woff",
+    "static/media/Roboto-Regular.woff": "/tickets/static/media/Roboto-Regular.054c3d0b2a5772a627f3.woff",
+    "static/media/Roboto-Medium.woff2": "/tickets/static/media/Roboto-Medium.ba07ff41b28ddac55c9c.woff2",
+    "static/media/Roboto-Regular.woff2": "/tickets/static/media/Roboto-Regular.e07bbc12a43804fa46c1.woff2",
+    "static/media/Roboto-Bold.woff2": "/tickets/static/media/Roboto-Bold.7594ffa8163510b41a56.woff2",
+    "static/media/github.svg": "/tickets/static/media/github.23ea278799c15865c3725bb9de03a476.svg",
+    "index.html": "/tickets/index.html",
+    "static/media/close.svg": "/tickets/static/media/close.d111364f0f3a9091d1c1697f3ce958f7.svg",
+    "main.f5838d4d.css.map": "/tickets/static/css/main.f5838d4d.css.map",
+    "main.555eff8c.js.map": "/tickets/static/js/main.555eff8c.js.map",
+    "787.98ebff90.chunk.js.map": "/tickets/static/js/787.98ebff90.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5838d4d.css",
+    "static/js/main.555eff8c.js"
+  ]
+}
